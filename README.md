@@ -1,4 +1,4 @@
-# ForumBot
+# VegaBot
 Java öğrenirken yaptığım botlardan birisidir VegaBot. Tamamlanmadı.
 [JDA Kütüphanesi](https://github.com/DV8FromTheWorld/JDA) kullanarak [Discord](https://discord.com/) için tasarlandı.
 
