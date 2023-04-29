@@ -1,52 +1,50 @@
 # VegaBot
-Java öğrenirken yaptığım botlardan birisidir VegaBot. Tamamlanmadı.
-[JDA Kütüphanesi](https://github.com/DV8FromTheWorld/JDA) kullanarak [Discord](https://discord.com/) için tasarlandı.
+VegaBot is one of the bots I made while learning Java. It is not yet complete.
+It is designed for [Discord](https://discord.com/) using the [JDA Library](https://github.com/DV8FromTheWorld/JDA).
 
+As I learned new things over time, I tried to improve it.
 
+### Features
 
-Zaman geçtikçe öğrendiğim yeni şeyler ile geliştirmeye çalıştım.
-
-### Özellikler
-
-Komutları  | Bilgi 
+Commands  | Description 
 ------------- | ------------- 
-SetPrefix  | Sunucu için prefixi değiştirir. 
-Demirci  | Kazma üretir.
-Fırın  | Cevherleri külçeye çevirir. 
-Item  | Eşya bilgilerini gösterir.
-Envanter  | Oyuncunun envanterini ve bilgilerini gösterir.
-Meslek | Meslek özellikleri gösterir. Meslek seçer.
-Kaz | Kazı yapar.
-Kazma | Kazmaları yönetmeyi sağlar. (Gönder,Sil,Kullan)
-Sat | Madenleri satmaya yarar.(Toplu yada seçerek)
-ParaGönder | Oyuncuların para transferi yapmasını sağlar.
-Gönder | Oyuncuların kaynak transferini yapmasını sağlar.
-Başla | Yeni bir oyuncu profili oluşturur.
-YazıTura | %50 ihtimalle yatırılan para 2'ye katlanır.
-Tahmin | Yatırılan para 1.5'e katlanır.
-Dövüş | Şansa bağlı dövüş oyunu. (2 Kişilik paralı)
+SetPrefix  | Changes the prefix for the server.
+Blacksmith  | Crafts a pickaxe.
+Furnace  | Turns ores into ingots.
+Item  | Shows information about an item.
+Inventory  | Shows the player's inventory and information.
+Job | Shows job features and allows the player to choose a job.
+Mine | Mines the specified amount of blocks.
+Pickaxe | Manages pickaxes. (Send, Delete, Use)
+Sell | Sells ores. (All or selected)
+SendMoney | Allows players to transfer money to other players.
+SendResource | Allows players to transfer resources to other players.
+Start | Creates a new player profile.
+CoinFlip | Doubles the amount of money bet with a 50% chance.
+Bet | Increases the amount of money bet by 1.5 times.
+Fight | A chance-based fighting game. (2 players, betting)
 
-Meslek  | Kazma Slotu | Bilgi 
+Job  | Pickaxe Slot | Description 
 ------------- | ------------- | -------------
-İşsiz | 1 | Yeni başlayanların sahip olduğu meslek.
-Demirci | 4 | Kazma üretimi yapabilen meslek.
-Fırıncı | 2 | Cevherleri külçe yapabilen meslek.
-Madenci | 2 | Özellik eklenmedi.
+Unemployed | 1 | A job that new players have by default.
+Blacksmith | 4 | A job that can craft pickaxes.
+Smelter | 2 | A job that can turn ores into ingots.
+Miner | 2 | No special features added.
 
-Madenler | Id | Alış F. | Satış F.  | Seviye  | Şans  | Üretim E.  | Eritildiğinde
+Ores  | Id | Buy P. | Sell P.  | Level  | Chance  | Production E.  | Result when smelted
 ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | -------------
-Çöp | 0 | -1 | 0 | 0 | 0 | - | null
-Kırıktaş | 1 | 5 | 1 | 0 | 15 | + | Taş
-Taş | 2 | 5 | 2 | 0 | 0 | - | Çöp
-Kömür | 3 | 100 | 1 | 10 | 1 | - | Çöp
-Demir Cevheri | 4 | 50 | 5 | 20 | 6 | - | Demir
-Demir | 5 | -1 | 10 | 1 | 0 | + | Çöp
-ALtın Cevheri | 6 | 500 | 25 | 40 |5 | - | Altın
-Altın | 7 | -1 | 50 | 2 | 0 | + | Çöp
-Elmas Cevheri | 8 | 100 | 50 | 60 | 5 | - | Elmas
-Elmas | 9 | -1 | 75 | 3 | 0 | + | Çöp
-Zümrüt | 10 | -1 | -1 | 100 | 1 | - | Çöp
+Junk | 0 | -1 | 0 | 0 | 0 | - | null
+Cobblestone | 1 | 5 | 1 | 0 | 15 | + | Stone
+Stone | 2 | 5 | 2 | 0 | 0 | - | Junk
+Coal | 3 | 100 | 1 | 10 | 1 | - | Junk
+Iron Ore | 4 | 50 | 5 | 20 | 6 | - | Iron
+Iron | 5 | -1 | 10 | 1 | 0 | + | Junk
+Gold Ore | 6 | 500 | 25 | 40 | 5 | - | Gold
+Gold | 7 | -1 | 50 | 2 | 0 | + | Junk
+Diamond Ore | 8 | 100 | 50 | 60 | 5 | - | Diamond
+Diamond | 9 | -1 | 75 | 3 | 0 | + | Junk
+Emerald | 10 | -1 | -1 | 100 | 1 | - | Junk
 
-Şansı 0 olanlar kazıda çıkmaz. -1 değeri o işlevin olmadığını belirtir (Alınamaz-Satılamaz). Üretim E. üretimde kullanılabilirliğini gösterir.
- 
- # İletişim : YmirSG#5599
+Ores with a chance of 0 will not be mined. The value of -1 indicates that the function is not available (Cannot be bought or sold). Production E. indicates the usability of the ore in production.
+
+# Contact: Discord: YmirSG#5599
